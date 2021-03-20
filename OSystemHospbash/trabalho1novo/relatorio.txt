@@ -1,0 +1,46 @@
+#Relatório primeiro trabalho S.O.
+
+#               !!  INFORMACOES DENTRO DE CADA SCRIPT PARA MELHOR ENTENDIMENTO   !!!
+
+
+
+
+
+
+
+
+
+
+
+#Menu.sh
+#Em Menu.sh teremos um ciclo 'while' que corre enquanto a variavel 'leitura' nao se altera para 0.
+#dentro do ciclo teremos um 'echo' as opcoes de operacoes disponiveis e os seus respectivos codigos numéricos.
+#Poteriormente um 'read' a registar a resposta do cliente, uma acao e tomada conforme a reposta do cliente.
+
+#cria_medico.sh
+#1) verificamos se foram passados o numero correto de argumentos para o script e saímos do script caso esse numero seja inferior
+#Associamos cada argumento a sua respectiva variavel
+
+#2) if [ verificamos se todos os argumentos sao validos ] se todos os argumentos sao validos continuamos a operaçao 
+#...
+#else
+#Erro 
+
+#3) if [ numero medico ja existe ] emite um erro de a comunicar a existencia do perfil
+#4) caso o nao exista teremos um else que ira criar esse perfil 
+
+
+#cria_pacientes.sh
+#1) limitar a informacao do ficheiro passwd ás linhas que comecem com 'a'e posteriormente tenha um numero (isto irá limitar a apenas informacao dos alunos) 
+#2) restringir apenas aos 10 primeiros alunos
+#3)retirada do primeiro caracter 'a' para termos o numero de aluno
+#4)awk ira utilizae ':,' como delimitadores e entao fazer print do numero; nome; email; 100(saldo)
+#5) tuda esta informacao que foi filtrada posteriormente irá ser escrita no ficheiro pacientes.txt ( ... > pacientes.txt )
+#caso o ficheiro nao exista isto ira criar, caso exista este codigo ira apagar o antigo e reescrever este por cima.
+
+#stats.sh
+ # 1)verifica se temos o numero de argumentos necessario e verifica a validade dos mesmos.
+ #2)verifica se existem pacientes registados
+ #3)vai a lista pacientes.txt e isola a coluna das localidades , faz uma procura pela localidade passada por argumentos e conta quantas ficaram
+ #4)verifica se existem medicos registados
+ #5)vai a lista medicos.txt na se o valor da coluna de valores for maior do que o argumento passado soma 1 ao contador
