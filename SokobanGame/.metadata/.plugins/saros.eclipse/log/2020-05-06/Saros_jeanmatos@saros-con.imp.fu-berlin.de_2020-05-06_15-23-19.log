@@ -1,0 +1,90 @@
+INFO  15:22:05,520 [DispatchContext] (NegotiationPacketListener.java:227) Starting Saros 15.0.0 running:
+  Java Version: 1.8.0_231
+  Java Vendor: Oracle Corporation
+  Eclipse Runtime Version: 3.17.100.v20200203-0917
+  Operating System: Windows 10 (10.0)
+  Hardware Architecture: amd64
+INFO  15:22:05,736 [DispatchContext] (NegotiationPacketListener.java:227) initializing context...
+INFO  15:22:10,605 [DispatchContext] (NegotiationPacketListener.java:227) initializing preference default values
+INFO  15:22:11,030 [DispatchContext] (NegotiationPacketListener.java:227) successfully initialized context
+INFO  15:23:19,531 [DispatchContext] (NegotiationPacketListener.java:227) received invitation from takaz@saros-con.imp.fu-berlin.de/Saros [negotiation id: 3024385591889341612, session id: 687833473, version: 15.0.0]
+WARN  15:23:21,215 [StunDiscovery-192.168.1.78] (StunServiceImpl.java:384) received no response from STUN server stunserver.org/67.227.226.240:3478 at local address /192.168.1.78:0
+INFO  15:23:23,783 [ModalContext] (SarosSessionManager.java:301) joined uninitialized Saros session
+INFO  15:23:23,786 [ModalContext] (DataTransferManager.java:416) establishing connection to takaz@saros-con.imp.fu-berlin.de/Saros from jeanmatos@saros-con.imp.fu-berlin.de/Saros using stream service XMPP-Socks5-Stream-Service
+INFO  15:23:26,680 [DispatchContext] (NegotiationPacketListener.java:310) received project negotiation from takaz@saros-con.imp.fu-berlin.de/Saros with negotiation id: 8887501404494747186
+WARN  15:23:27,131 [pool-6-thread-1] (Socks5StreamService.java:329) [SOCKS5Transport] Received response connection without a running connect
+DEBUG 15:23:28,471 [Smack Listener Processor (0)] (MultiUserChatStateManager.java:98) Incoming Message from saros_687833473@conference.saros-con.imp.fu-berlin.de/jeanmatos@saros-con.imp.fu-berlin.de/Saros with state: active
+INFO  15:25:31,964 [DispatchContext] (SarosSession.java:453) user takaz@saros-con.imp.fu-berlin.de/Saros now has Projects and can process IResourceActivities
+INFO  15:35:48,279 [main] (ConsistencyWatchdogClient.java:345) Inconsistencies have been detected
+INFO  15:35:50,424 [dpp-stop-host] (SarosSessionManager.java:345) session stopped
+INFO  15:35:59,809 [DispatchContext] (NegotiationPacketListener.java:227) received invitation from takaz@saros-con.imp.fu-berlin.de/Saros [negotiation id: 6173781219042260662, session id: 147985061, version: 15.0.0]
+INFO  15:36:16,519 [ModalContext] (SarosSessionManager.java:301) joined uninitialized Saros session
+INFO  15:36:16,522 [ModalContext] (DataTransferManager.java:416) establishing connection to takaz@saros-con.imp.fu-berlin.de/Saros from jeanmatos@saros-con.imp.fu-berlin.de/Saros using stream service XMPP-Socks5-Stream-Service
+INFO  15:36:18,749 [DispatchContext] (NegotiationPacketListener.java:310) received project negotiation from takaz@saros-con.imp.fu-berlin.de/Saros with negotiation id: -6828873248816311352
+WARN  15:36:19,208 [pool-6-thread-3] (Socks5StreamService.java:329) [SOCKS5Transport] Received response connection without a running connect
+DEBUG 15:36:20,946 [Smack Listener Processor (0)] (MultiUserChatStateManager.java:98) Incoming Message from saros_147985061@conference.saros-con.imp.fu-berlin.de/jeanmatos@saros-con.imp.fu-berlin.de/Saros with state: active
+INFO  15:36:26,522 [DispatchContext] (SarosSession.java:453) user takaz@saros-con.imp.fu-berlin.de/Saros now has Projects and can process IResourceActivities
+WARN  15:40:06,372 [main] (FileActivityConsumer.java:147) could not delete file L/GraphPack_2019_2020_V1_/bin/Gelo.class because it does not exist
+WARN  16:30:38,769 [dpp-shutdown] (SWTUtils.java:128) could not execute runnable saros.ui.actions.RemoveUserAction$2$2@540e834, UI thread is not available
+StackTrace:
+	at saros.ui.util.SWTUtils.runSafeSWTAsync(SWTUtils.java:130)
+	at saros.ui.actions.RemoveUserAction$2.sessionEnding(RemoveUserAction.java:64)
+	at saros.session.SarosSessionManager.sessionEnding(SarosSessionManager.java:796)
+	at saros.session.SarosSessionManager.stopSession(SarosSessionManager.java:341)
+	at saros.EclipsePluginLifecycle.finalizeContext(EclipsePluginLifecycle.java:66)
+	at saros.context.AbstractContextLifecycle.stop(AbstractContextLifecycle.java:111)
+	at saros.Saros$1.run(Saros.java:141)
+	at saros.util.ThreadUtils$1.run(ThreadUtils.java:35)
+	at java.lang.Thread.run(Thread.java:748)
+WARN  16:30:38,798 [dpp-shutdown] (SWTUtils.java:176) could not execute runnable saros.editor.EditorManager$3$1@7bba8371, UI thread is not available
+StackTrace:
+	at saros.ui.util.SWTUtils.runSafeSWTSync(SWTUtils.java:178)
+	at saros.editor.EditorManager$3.execute(EditorManager.java:239)
+	at saros.editor.EditorManager$3.unblock(EditorManager.java:230)
+	at saros.synchronize.StopManager.lockSession(StopManager.java:363)
+	at saros.synchronize.StopManager.stop(StopManager.java:531)
+	at sun.reflect.GeneratedMethodAccessor65.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.picocontainer.lifecycle.StartableLifecycleStrategy.doLifecycleMethod(StartableLifecycleStrategy.java:101)
+	at org.picocontainer.lifecycle.StartableLifecycleStrategy.stopComponent(StartableLifecycleStrategy.java:113)
+	at org.picocontainer.lifecycle.StartableLifecycleStrategy.stop(StartableLifecycleStrategy.java:126)
+	at org.picocontainer.injectors.AbstractInjectionFactory$LifecycleAdapter.stop(AbstractInjectionFactory.java:88)
+	at org.picocontainer.behaviors.AbstractBehavior.stop(AbstractBehavior.java:179)
+	at org.picocontainer.behaviors.Stored$RealComponentLifecycle.stop(Stored.java:141)
+	at org.picocontainer.behaviors.Stored.stop(Stored.java:118)
+	at org.picocontainer.DefaultPicoContainer.stopAdapters(DefaultPicoContainer.java:1036)
+	at org.picocontainer.DefaultPicoContainer.stop(DefaultPicoContainer.java:791)
+	at saros.session.internal.SarosSession.stop(SarosSession.java:615)
+	at saros.session.SarosSessionManager.stopSession(SarosSessionManager.java:344)
+	at saros.EclipsePluginLifecycle.finalizeContext(EclipsePluginLifecycle.java:66)
+	at saros.context.AbstractContextLifecycle.stop(AbstractContextLifecycle.java:111)
+	at saros.Saros$1.run(Saros.java:141)
+	at saros.util.ThreadUtils$1.run(ThreadUtils.java:35)
+	at java.lang.Thread.run(Thread.java:748)
+INFO  16:30:38,815 [dpp-shutdown] (SarosSessionManager.java:345) session stopped
+WARN  16:30:38,818 [dpp-shutdown] (SWTUtils.java:176) could not execute runnable saros.editor.EditorManager$5$2@2edb2db4, UI thread is not available
+StackTrace:
+	at saros.ui.util.SWTUtils.runSafeSWTSync(SWTUtils.java:178)
+	at saros.editor.EditorManager$5.sessionEnded(EditorManager.java:361)
+	at saros.session.SarosSessionManager.sessionEnded(SarosSessionManager.java:806)
+	at saros.session.SarosSessionManager.stopSession(SarosSessionManager.java:358)
+	at saros.EclipsePluginLifecycle.finalizeContext(EclipsePluginLifecycle.java:66)
+	at saros.context.AbstractContextLifecycle.stop(AbstractContextLifecycle.java:111)
+	at saros.Saros$1.run(Saros.java:141)
+	at saros.util.ThreadUtils$1.run(ThreadUtils.java:35)
+	at java.lang.Thread.run(Thread.java:748)
+WARN  16:30:38,822 [dpp-shutdown] (SWTUtils.java:128) could not execute runnable saros.ui.views.SarosView$12@672393a0, UI thread is not available
+StackTrace:
+	at saros.ui.util.SWTUtils.runSafeSWTAsync(SWTUtils.java:130)
+	at saros.ui.views.SarosView.clearNotifications(SarosView.java:639)
+	at saros.ui.eventhandler.HostLeftAloneInSessionHandler$1.sessionEnded(HostLeftAloneInSessionHandler.java:44)
+	at saros.session.SarosSessionManager.sessionEnded(SarosSessionManager.java:806)
+	at saros.session.SarosSessionManager.stopSession(SarosSessionManager.java:358)
+	at saros.EclipsePluginLifecycle.finalizeContext(EclipsePluginLifecycle.java:66)
+	at saros.context.AbstractContextLifecycle.stop(AbstractContextLifecycle.java:111)
+	at saros.Saros$1.run(Saros.java:141)
+	at saros.util.ThreadUtils$1.run(ThreadUtils.java:35)
+	at java.lang.Thread.run(Thread.java:748)
+INFO  16:30:38,989 [dpp-shutdown] (ContainerContext.java:209) disposing context...
+INFO  16:30:38,994 [dpp-shutdown] (ContainerContext.java:213) successfully disposed context

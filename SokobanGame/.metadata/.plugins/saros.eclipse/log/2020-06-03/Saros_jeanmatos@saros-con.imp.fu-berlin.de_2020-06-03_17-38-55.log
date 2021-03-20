@@ -1,0 +1,62 @@
+INFO  17:38:34,320 [StunDiscovery-192.168.1.150] (StunServiceImpl.java:384) Starting Saros 15.0.0 running:
+  Java Version: 1.8.0_231
+  Java Vendor: Oracle Corporation
+  Eclipse Runtime Version: 3.17.100.v20200203-0917
+  Operating System: Windows 10 (10.0)
+  Hardware Architecture: amd64
+INFO  17:38:34,345 [StunDiscovery-192.168.1.150] (StunServiceImpl.java:384) initializing context...
+INFO  17:38:35,055 [StunDiscovery-192.168.1.150] (StunServiceImpl.java:384) initializing preference default values
+INFO  17:38:35,126 [StunDiscovery-192.168.1.150] (StunServiceImpl.java:384) successfully initialized context
+WARN  17:38:55,202 [StunDiscovery-192.168.1.150] (StunServiceImpl.java:384) received no response from STUN server stunserver.org/67.227.226.240:3478 at local address /192.168.1.150:0
+ERROR 17:48:44,572 [Smack Packet Reader (0)] (XMPPConnectionService.java:97) XMPP connection error: 
+java.net.SocketException: Network is unreachable: recv failed
+	at java.net.SocketInputStream.socketRead0(Native Method)
+	at java.net.SocketInputStream.socketRead(SocketInputStream.java:116)
+	at java.net.SocketInputStream.read(SocketInputStream.java:171)
+	at java.net.SocketInputStream.read(SocketInputStream.java:141)
+	at sun.security.ssl.InputRecord.readFully(InputRecord.java:465)
+	at sun.security.ssl.InputRecord.read(InputRecord.java:503)
+	at sun.security.ssl.SSLSocketImpl.readRecord(SSLSocketImpl.java:975)
+	at sun.security.ssl.SSLSocketImpl.readDataRecord(SSLSocketImpl.java:933)
+	at sun.security.ssl.AppInputStream.read(AppInputStream.java:105)
+	at sun.nio.cs.StreamDecoder.readBytes(StreamDecoder.java:284)
+	at sun.nio.cs.StreamDecoder.implRead(StreamDecoder.java:326)
+	at sun.nio.cs.StreamDecoder.read(StreamDecoder.java:178)
+	at java.io.InputStreamReader.read(InputStreamReader.java:184)
+	at java.io.BufferedReader.fill(BufferedReader.java:161)
+	at java.io.BufferedReader.read1(BufferedReader.java:212)
+	at java.io.BufferedReader.read(BufferedReader.java:286)
+	at org.xmlpull.mxp1.MXParser.fillBuf(MXParser.java:2992)
+	at org.xmlpull.mxp1.MXParser.more(MXParser.java:3046)
+	at org.xmlpull.mxp1.MXParser.nextImpl(MXParser.java:1144)
+	at org.xmlpull.mxp1.MXParser.next(MXParser.java:1093)
+	at org.jivesoftware.smack.PacketReader.parsePackets(PacketReader.java:312)
+	at org.jivesoftware.smack.PacketReader.access$000(PacketReader.java:48)
+	at org.jivesoftware.smack.PacketReader$1.run(PacketReader.java:76)
+ERROR 17:48:44,579 [Smack Packet Reader (0)] (XMPPConnectionService.java:364)  new connection state == ERROR
+java.net.SocketException: Network is unreachable: recv failed
+	at java.net.SocketInputStream.socketRead0(Native Method)
+	at java.net.SocketInputStream.socketRead(SocketInputStream.java:116)
+	at java.net.SocketInputStream.read(SocketInputStream.java:171)
+	at java.net.SocketInputStream.read(SocketInputStream.java:141)
+	at sun.security.ssl.InputRecord.readFully(InputRecord.java:465)
+	at sun.security.ssl.InputRecord.read(InputRecord.java:503)
+	at sun.security.ssl.SSLSocketImpl.readRecord(SSLSocketImpl.java:975)
+	at sun.security.ssl.SSLSocketImpl.readDataRecord(SSLSocketImpl.java:933)
+	at sun.security.ssl.AppInputStream.read(AppInputStream.java:105)
+	at sun.nio.cs.StreamDecoder.readBytes(StreamDecoder.java:284)
+	at sun.nio.cs.StreamDecoder.implRead(StreamDecoder.java:326)
+	at sun.nio.cs.StreamDecoder.read(StreamDecoder.java:178)
+	at java.io.InputStreamReader.read(InputStreamReader.java:184)
+	at java.io.BufferedReader.fill(BufferedReader.java:161)
+	at java.io.BufferedReader.read1(BufferedReader.java:212)
+	at java.io.BufferedReader.read(BufferedReader.java:286)
+	at org.xmlpull.mxp1.MXParser.fillBuf(MXParser.java:2992)
+	at org.xmlpull.mxp1.MXParser.more(MXParser.java:3046)
+	at org.xmlpull.mxp1.MXParser.nextImpl(MXParser.java:1144)
+	at org.xmlpull.mxp1.MXParser.next(MXParser.java:1093)
+	at org.jivesoftware.smack.PacketReader.parsePackets(PacketReader.java:312)
+	at org.jivesoftware.smack.PacketReader.access$000(PacketReader.java:48)
+	at org.jivesoftware.smack.PacketReader$1.run(PacketReader.java:76)
+INFO  23:34:32,918 [dpp-shutdown] (ContainerContext.java:209) disposing context...
+INFO  23:34:32,920 [dpp-shutdown] (ContainerContext.java:213) successfully disposed context

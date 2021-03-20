@@ -1,0 +1,64 @@
+WARN  15:23:21,215 [StunDiscovery-192.168.1.78] (StunServiceImpl.java:384) received no response from STUN server stunserver.org/67.227.226.240:3478 at local address /192.168.1.78:0
+WARN  15:23:27,131 [pool-6-thread-1] (Socks5StreamService.java:329) [SOCKS5Transport] Received response connection without a running connect
+WARN  15:36:19,208 [pool-6-thread-3] (Socks5StreamService.java:329) [SOCKS5Transport] Received response connection without a running connect
+WARN  15:40:06,372 [main] (FileActivityConsumer.java:147) could not delete file L/GraphPack_2019_2020_V1_/bin/Gelo.class because it does not exist
+WARN  16:30:38,769 [dpp-shutdown] (SWTUtils.java:128) could not execute runnable saros.ui.actions.RemoveUserAction$2$2@540e834, UI thread is not available
+StackTrace:
+	at saros.ui.util.SWTUtils.runSafeSWTAsync(SWTUtils.java:130)
+	at saros.ui.actions.RemoveUserAction$2.sessionEnding(RemoveUserAction.java:64)
+	at saros.session.SarosSessionManager.sessionEnding(SarosSessionManager.java:796)
+	at saros.session.SarosSessionManager.stopSession(SarosSessionManager.java:341)
+	at saros.EclipsePluginLifecycle.finalizeContext(EclipsePluginLifecycle.java:66)
+	at saros.context.AbstractContextLifecycle.stop(AbstractContextLifecycle.java:111)
+	at saros.Saros$1.run(Saros.java:141)
+	at saros.util.ThreadUtils$1.run(ThreadUtils.java:35)
+	at java.lang.Thread.run(Thread.java:748)
+WARN  16:30:38,798 [dpp-shutdown] (SWTUtils.java:176) could not execute runnable saros.editor.EditorManager$3$1@7bba8371, UI thread is not available
+StackTrace:
+	at saros.ui.util.SWTUtils.runSafeSWTSync(SWTUtils.java:178)
+	at saros.editor.EditorManager$3.execute(EditorManager.java:239)
+	at saros.editor.EditorManager$3.unblock(EditorManager.java:230)
+	at saros.synchronize.StopManager.lockSession(StopManager.java:363)
+	at saros.synchronize.StopManager.stop(StopManager.java:531)
+	at sun.reflect.GeneratedMethodAccessor65.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.picocontainer.lifecycle.StartableLifecycleStrategy.doLifecycleMethod(StartableLifecycleStrategy.java:101)
+	at org.picocontainer.lifecycle.StartableLifecycleStrategy.stopComponent(StartableLifecycleStrategy.java:113)
+	at org.picocontainer.lifecycle.StartableLifecycleStrategy.stop(StartableLifecycleStrategy.java:126)
+	at org.picocontainer.injectors.AbstractInjectionFactory$LifecycleAdapter.stop(AbstractInjectionFactory.java:88)
+	at org.picocontainer.behaviors.AbstractBehavior.stop(AbstractBehavior.java:179)
+	at org.picocontainer.behaviors.Stored$RealComponentLifecycle.stop(Stored.java:141)
+	at org.picocontainer.behaviors.Stored.stop(Stored.java:118)
+	at org.picocontainer.DefaultPicoContainer.stopAdapters(DefaultPicoContainer.java:1036)
+	at org.picocontainer.DefaultPicoContainer.stop(DefaultPicoContainer.java:791)
+	at saros.session.internal.SarosSession.stop(SarosSession.java:615)
+	at saros.session.SarosSessionManager.stopSession(SarosSessionManager.java:344)
+	at saros.EclipsePluginLifecycle.finalizeContext(EclipsePluginLifecycle.java:66)
+	at saros.context.AbstractContextLifecycle.stop(AbstractContextLifecycle.java:111)
+	at saros.Saros$1.run(Saros.java:141)
+	at saros.util.ThreadUtils$1.run(ThreadUtils.java:35)
+	at java.lang.Thread.run(Thread.java:748)
+WARN  16:30:38,818 [dpp-shutdown] (SWTUtils.java:176) could not execute runnable saros.editor.EditorManager$5$2@2edb2db4, UI thread is not available
+StackTrace:
+	at saros.ui.util.SWTUtils.runSafeSWTSync(SWTUtils.java:178)
+	at saros.editor.EditorManager$5.sessionEnded(EditorManager.java:361)
+	at saros.session.SarosSessionManager.sessionEnded(SarosSessionManager.java:806)
+	at saros.session.SarosSessionManager.stopSession(SarosSessionManager.java:358)
+	at saros.EclipsePluginLifecycle.finalizeContext(EclipsePluginLifecycle.java:66)
+	at saros.context.AbstractContextLifecycle.stop(AbstractContextLifecycle.java:111)
+	at saros.Saros$1.run(Saros.java:141)
+	at saros.util.ThreadUtils$1.run(ThreadUtils.java:35)
+	at java.lang.Thread.run(Thread.java:748)
+WARN  16:30:38,822 [dpp-shutdown] (SWTUtils.java:128) could not execute runnable saros.ui.views.SarosView$12@672393a0, UI thread is not available
+StackTrace:
+	at saros.ui.util.SWTUtils.runSafeSWTAsync(SWTUtils.java:130)
+	at saros.ui.views.SarosView.clearNotifications(SarosView.java:639)
+	at saros.ui.eventhandler.HostLeftAloneInSessionHandler$1.sessionEnded(HostLeftAloneInSessionHandler.java:44)
+	at saros.session.SarosSessionManager.sessionEnded(SarosSessionManager.java:806)
+	at saros.session.SarosSessionManager.stopSession(SarosSessionManager.java:358)
+	at saros.EclipsePluginLifecycle.finalizeContext(EclipsePluginLifecycle.java:66)
+	at saros.context.AbstractContextLifecycle.stop(AbstractContextLifecycle.java:111)
+	at saros.Saros$1.run(Saros.java:141)
+	at saros.util.ThreadUtils$1.run(ThreadUtils.java:35)
+	at java.lang.Thread.run(Thread.java:748)

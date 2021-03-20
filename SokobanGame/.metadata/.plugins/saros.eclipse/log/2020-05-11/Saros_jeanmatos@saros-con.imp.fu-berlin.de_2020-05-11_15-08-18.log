@@ -1,0 +1,18 @@
+INFO  15:07:57,833 [StunDiscovery-192.168.1.78] (StunServiceImpl.java:384) Starting Saros 15.0.0 running:
+  Java Version: 1.8.0_231
+  Java Vendor: Oracle Corporation
+  Eclipse Runtime Version: 3.17.100.v20200203-0917
+  Operating System: Windows 10 (10.0)
+  Hardware Architecture: amd64
+INFO  15:07:57,862 [StunDiscovery-192.168.1.78] (StunServiceImpl.java:384) initializing context...
+INFO  15:07:58,585 [StunDiscovery-192.168.1.78] (StunServiceImpl.java:384) initializing preference default values
+INFO  15:07:58,654 [StunDiscovery-192.168.1.78] (StunServiceImpl.java:384) successfully initialized context
+WARN  15:08:18,706 [StunDiscovery-192.168.1.78] (StunServiceImpl.java:384) received no response from STUN server stunserver.org/67.227.226.240:3478 at local address /192.168.1.78:0
+INFO  15:13:45,116 [Worker-20: Session Startup] (SarosSessionManager.java:285) session started
+INFO  15:13:54,988 [Worker-23: Inviting Tarikao (takaz@saros-con.imp.fu-berlin.de)...] (SarosSession.java:418) user takaz@saros-con.imp.fu-berlin.de/Saros joined session
+INFO  15:13:59,097 [Worker-20: Synchronizing projects] (SarosSession.java:424) user takaz@saros-con.imp.fu-berlin.de/Saros started queuing projects and can receive IResourceActivities
+INFO  15:14:00,155 [Worker-20: Synchronizing projects] (SarosSession.java:453) user takaz@saros-con.imp.fu-berlin.de/Saros now has Projects and can process IResourceActivities
+INFO  17:34:13,524 [dpp-remove-takaz@saros-con.imp.fu-berlin.de/Saros] (SarosSession.java:535) user takaz@saros-con.imp.fu-berlin.de/Saros left session
+INFO  17:34:13,544 [StopSession] (SarosSessionManager.java:345) session stopped
+INFO  17:34:19,096 [dpp-shutdown] (ContainerContext.java:209) disposing context...
+INFO  17:34:19,098 [dpp-shutdown] (ContainerContext.java:213) successfully disposed context

@@ -1,0 +1,26 @@
+INFO  16:59:32,156 [StunDiscovery-192.168.1.78] (StunServiceImpl.java:384) Starting Saros 15.0.0 running:
+  Java Version: 1.8.0_231
+  Java Vendor: Oracle Corporation
+  Eclipse Runtime Version: 3.17.100.v20200203-0917
+  Operating System: Windows 10 (10.0)
+  Hardware Architecture: amd64
+INFO  16:59:32,185 [StunDiscovery-192.168.1.78] (StunServiceImpl.java:384) initializing context...
+INFO  16:59:32,797 [StunDiscovery-192.168.1.78] (StunServiceImpl.java:384) initializing preference default values
+INFO  16:59:32,846 [StunDiscovery-192.168.1.78] (StunServiceImpl.java:384) successfully initialized context
+WARN  16:59:50,568 [StunDiscovery-192.168.1.78] (StunServiceImpl.java:384) received no response from STUN server stunserver.org/67.227.226.240:3478 at local address /192.168.1.78:0
+WARN  17:00:57,810 [Worker-0: Session Startup] (ConsistencyAction.java:172) watchdog client component is not available, cannot perform inconsistency notification
+INFO  17:00:58,072 [Worker-0: Session Startup] (SarosSessionManager.java:285) session started
+DEBUG 17:00:59,343 [Smack Listener Processor (0)] (MultiUserChatStateManager.java:98) Incoming Message from saros_1501072769@conference.saros-con.imp.fu-berlin.de/jeanmatos@saros-con.imp.fu-berlin.de/Saros with state: active
+INFO  17:02:21,367 [Worker-16: Inviting Tarikao (takaz@saros-con.imp.fu-berlin.de)...] (SarosSession.java:418) user takaz@saros-con.imp.fu-berlin.de/Saros joined session
+DEBUG 17:02:21,797 [Smack Listener Processor (0)] (MultiUserChatStateManager.java:98) Incoming Message from saros_1501072769@conference.saros-con.imp.fu-berlin.de/takaz@saros-con.imp.fu-berlin.de/Saros with state: active
+INFO  17:02:51,873 [Worker-17: Synchronizing projects] (SarosSession.java:424) user takaz@saros-con.imp.fu-berlin.de/Saros started queuing projects and can receive IResourceActivities
+INFO  17:02:52,696 [Worker-17: Synchronizing projects] (SarosSession.java:453) user takaz@saros-con.imp.fu-berlin.de/Saros now has Projects and can process IResourceActivities
+INFO  19:34:51,942 [dpp-remove-takaz@saros-con.imp.fu-berlin.de/Saros] (SarosSession.java:535) user takaz@saros-con.imp.fu-berlin.de/Saros left session
+INFO  19:35:33,101 [Worker-44: Inviting Tarikao (takaz@saros-con.imp.fu-berlin.de)...] (SarosSession.java:418) user takaz@saros-con.imp.fu-berlin.de/Saros joined session
+DEBUG 19:35:34,612 [Smack Listener Processor (0)] (MultiUserChatStateManager.java:98) Incoming Message from saros_1501072769@conference.saros-con.imp.fu-berlin.de/takaz@saros-con.imp.fu-berlin.de/Saros with state: active
+INFO  19:36:34,772 [Worker-40: Synchronizing projects] (SarosSession.java:424) user takaz@saros-con.imp.fu-berlin.de/Saros started queuing projects and can receive IResourceActivities
+INFO  19:36:34,774 [Worker-40: Synchronizing projects] (SarosSession.java:453) user takaz@saros-con.imp.fu-berlin.de/Saros now has Projects and can process IResourceActivities
+INFO  19:38:19,606 [dpp-remove-takaz@saros-con.imp.fu-berlin.de/Saros] (SarosSession.java:535) user takaz@saros-con.imp.fu-berlin.de/Saros left session
+INFO  19:38:19,621 [StopSession] (SarosSessionManager.java:345) session stopped
+INFO  00:15:19,052 [dpp-shutdown] (ContainerContext.java:209) disposing context...
+INFO  00:15:19,054 [dpp-shutdown] (ContainerContext.java:213) successfully disposed context

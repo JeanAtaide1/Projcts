@@ -1,0 +1,49 @@
+ERROR 15:47:46,407 [StunDiscovery-192.168.1.78] (StunServiceImpl.java:144) an error occurred while performing a STUN discovery: ICMP Port Unreachable
+java.net.PortUnreachableException: ICMP Port Unreachable
+	at java.net.DualStackPlainDatagramSocketImpl.socketReceiveOrPeekData(Native Method)
+	at java.net.DualStackPlainDatagramSocketImpl.receive0(DualStackPlainDatagramSocketImpl.java:124)
+	at java.net.AbstractPlainDatagramSocketImpl.receive(AbstractPlainDatagramSocketImpl.java:143)
+	at java.net.DatagramSocket.receive(DatagramSocket.java:812)
+	at saros.net.stun.internal.StunServiceImpl$StunDiscovery.performStunDiscovery(StunServiceImpl.java:260)
+	at saros.net.stun.internal.StunServiceImpl$StunDiscovery.run(StunServiceImpl.java:139)
+	at java.lang.Thread.run(Thread.java:748)
+ERROR 15:58:50,052 [BinaryChannel-takaz] (BinaryChannelConnection.java:100) [mode=SOCKS5 (D), id=saros-main-session] takaz@saros-con.imp.fu-berlin.de/Saros network error: Read timed out
+java.net.SocketTimeoutException: Read timed out
+	at java.net.SocketInputStream.socketRead0(Native Method)
+	at java.net.SocketInputStream.socketRead(SocketInputStream.java:116)
+	at java.net.SocketInputStream.read(SocketInputStream.java:171)
+	at java.net.SocketInputStream.read(SocketInputStream.java:141)
+	at java.io.BufferedInputStream.fill(BufferedInputStream.java:246)
+	at java.io.BufferedInputStream.read(BufferedInputStream.java:265)
+	at java.io.DataInputStream.readUnsignedByte(DataInputStream.java:288)
+	at saros.net.internal.BinaryChannelConnection.readNextXMPPExtension(BinaryChannelConnection.java:287)
+	at saros.net.internal.BinaryChannelConnection.access$2(BinaryChannelConnection.java:283)
+	at saros.net.internal.BinaryChannelConnection$ReceiverThread.run(BinaryChannelConnection.java:93)
+ERROR 15:58:51,660 [dpp-activity-sender] (ActivitySequencer.java:521) failed to sent activities: [ChecksumActivity(path: SPath [project=P/Sokoban2020_TarikAziz_92495_JeanMatos_92844 (EclipseProjectImpl), projectRelativePath=src/pt/iscte/dcti/poo/sokoban/starter/Buraco.java], hash: -659720949, length: 923, jupiterTimestamp: [0,0]), ChecksumActivity(path: SPath [project=P/Sokoban2020_TarikAziz_92495_JeanMatos_92844 (EclipseProjectImpl), projectRelativePath=src/pt/iscte/dcti/poo/sokoban/starter/SokobanGame.java], hash: 1485014561, length: 6824, jupiterTimestamp: [0,0]), ChecksumActivity(path: SPath [project=P/Sokoban2020_TarikAziz_92495_JeanMatos_92844 (EclipseProjectImpl), projectRelativePath=src/pt/iscte/dcti/poo/sokoban/starter/Caixote.java], hash: 1857406128, length: 1168, jupiterTimestamp: [0,0])]
+java.io.IOException: not connected to takaz@saros-con.imp.fu-berlin.de/Saros [connection identifier=saros-main-session]
+	at saros.net.internal.DataTransferManager.sendData(DataTransferManager.java:225)
+	at saros.net.internal.XMPPTransmitter.send(XMPPTransmitter.java:84)
+	at saros.session.internal.ActivitySequencer.sendActivities(ActivitySequencer.java:519)
+	at saros.session.internal.ActivitySequencer.access$3(ActivitySequencer.java:461)
+	at saros.session.internal.ActivitySequencer$2.run(ActivitySequencer.java:147)
+	at saros.util.ThreadUtils$1.run(ThreadUtils.java:35)
+	at java.lang.Thread.run(Thread.java:748)
+WARN  16:07:44,464 [Smack Listener Processor (0)] (SubscriptionHandler.java:127) received error presence package from saros_867143356@conference.saros-con.imp.fu-berlin.de/jeanmatos@saros-con.imp.fu-berlin.de/Saros, condition: not-authorized, message: A password is required to enter this room
+WARN  16:07:44,810 [pool-6-thread-2] (Socks5StreamService.java:329) [SOCKS5Transport] Received response connection without a running connect
+WARN  16:41:49,331 [main] (TextEditActivity.java:161) NoOp Text edit: new '' old ''
+WARN  16:41:50,756 [main] (TextEditActivity.java:161) NoOp Text edit: new '' old ''
+WARN  16:41:52,614 [main] (TextEditActivity.java:161) NoOp Text edit: new '' old ''
+WARN  16:42:10,446 [main] (TextEditActivity.java:161) NoOp Text edit: new '' old ''
+WARN  16:42:29,240 [main] (TextEditActivity.java:161) NoOp Text edit: new '' old ''
+WARN  16:42:33,415 [main] (TextEditActivity.java:161) NoOp Text edit: new '' old ''
+WARN  16:43:30,812 [main] (TextEditActivity.java:161) NoOp Text edit: new '' old ''
+WARN  16:45:27,618 [main] (TextEditActivity.java:161) NoOp Text edit: new '' old ''
+WARN  16:48:03,176 [main] (TextEditActivity.java:161) NoOp Text edit: new '' old ''
+WARN  16:51:19,259 [main] (TextEditActivity.java:161) NoOp Text edit: new '' old ''
+WARN  16:52:58,249 [main] (TextEditActivity.java:161) NoOp Text edit: new '' old ''
+WARN  16:56:20,992 [main] (TextEditActivity.java:161) NoOp Text edit: new '' old ''
+WARN  16:59:18,906 [main] (TextEditActivity.java:161) NoOp Text edit: new '' old ''
+WARN  17:17:48,761 [main] (EditorAPI.java:259) could not get resource reference from editor part: org.eclipse.jdt.internal.ui.javaeditor.ClassFileEditor@3115f183
+WARN  17:17:48,782 [main] (EditorAPI.java:259) could not get resource reference from editor part: org.eclipse.jdt.internal.ui.javaeditor.ClassFileEditor@3115f183
+WARN  17:17:48,817 [main] (EditorAPI.java:259) could not get resource reference from editor part: org.eclipse.jdt.internal.ui.javaeditor.ClassFileEditor@3115f183
+WARN  17:17:52,202 [main] (EditorAPI.java:259) could not get resource reference from editor part: org.eclipse.jdt.internal.ui.javaeditor.ClassFileEditor@3115f183

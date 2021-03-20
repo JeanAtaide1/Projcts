@@ -1,0 +1,107 @@
+WARN  14:35:07,113 [StunDiscovery-192.168.1.78] (StunServiceImpl.java:384) received no response from STUN server stunserver.org/67.227.226.240:3478 at local address /192.168.1.78:0
+WARN  14:53:13,483 [main] (ConsistencyAction.java:172) watchdog client component is not available, cannot perform inconsistency notification
+ERROR 17:04:52,134 [dpp-server-network-watchdog] (ServerSessionTimeoutHandler.java:118) no pong received from user takaz@saros-con.imp.fu-berlin.de/Saros, reached timeout = 300000
+ERROR 17:05:10,138 [BinaryChannel-takaz] (BinaryChannelConnection.java:100) [mode=SOCKS5 (D), id=saros-main-session] takaz@saros-con.imp.fu-berlin.de/Saros network error: Read timed out
+java.net.SocketTimeoutException: Read timed out
+	at java.net.SocketInputStream.socketRead0(Native Method)
+	at java.net.SocketInputStream.socketRead(SocketInputStream.java:116)
+	at java.net.SocketInputStream.read(SocketInputStream.java:171)
+	at java.net.SocketInputStream.read(SocketInputStream.java:141)
+	at java.io.BufferedInputStream.fill(BufferedInputStream.java:246)
+	at java.io.BufferedInputStream.read(BufferedInputStream.java:265)
+	at java.io.DataInputStream.readUnsignedByte(DataInputStream.java:288)
+	at saros.net.internal.BinaryChannelConnection.readNextXMPPExtension(BinaryChannelConnection.java:287)
+	at saros.net.internal.BinaryChannelConnection.access$2(BinaryChannelConnection.java:283)
+	at saros.net.internal.BinaryChannelConnection$ReceiverThread.run(BinaryChannelConnection.java:93)
+ERROR 18:36:08,877 [StopSession] (SarosSessionManager.java:808) error in notifying listener of session end: 
+java.lang.NullPointerException
+	at saros.ui.actions.FollowThisPersonAction$1.sessionEnded(FollowThisPersonAction.java:55)
+	at saros.session.SarosSessionManager.sessionEnded(SarosSessionManager.java:806)
+	at saros.session.SarosSessionManager.stopSession(SarosSessionManager.java:358)
+	at saros.ui.util.CollaborationUtils$2.run(CollaborationUtils.java:152)
+	at saros.util.ThreadUtils$1.run(ThreadUtils.java:35)
+	at java.lang.Thread.run(Thread.java:748)
+ERROR 18:36:08,878 [StopSession] (SarosSessionManager.java:808) error in notifying listener of session end: 
+java.lang.NullPointerException
+	at saros.ui.actions.FollowModeAction$3.sessionEnded(FollowModeAction.java:118)
+	at saros.session.SarosSessionManager.sessionEnded(SarosSessionManager.java:806)
+	at saros.session.SarosSessionManager.stopSession(SarosSessionManager.java:358)
+	at saros.ui.util.CollaborationUtils$2.run(CollaborationUtils.java:152)
+	at saros.util.ThreadUtils$1.run(ThreadUtils.java:35)
+	at java.lang.Thread.run(Thread.java:748)
+WARN  18:37:04,407 [Worker-110: Session Startup] (ConsistencyAction.java:172) watchdog client component is not available, cannot perform inconsistency notification
+WARN  18:37:18,737 [main] (FileActivityConsumer.java:147) could not delete file L/Sokoban2020_TarikAziz_92495_JeanMatos_92844/bin/.project because it does not exist
+WARN  18:53:27,373 [StopSession] (SWTUtils.java:128) could not execute runnable saros.ui.actions.RemoveUserAction$2$2@762fc2f2, UI thread is not available
+StackTrace:
+	at saros.ui.util.SWTUtils.runSafeSWTAsync(SWTUtils.java:130)
+	at saros.ui.actions.RemoveUserAction$2.sessionEnding(RemoveUserAction.java:64)
+	at saros.session.SarosSessionManager.sessionEnding(SarosSessionManager.java:796)
+	at saros.session.SarosSessionManager.stopSession(SarosSessionManager.java:341)
+	at saros.ui.util.CollaborationUtils$2.run(CollaborationUtils.java:152)
+	at saros.util.ThreadUtils$1.run(ThreadUtils.java:35)
+	at java.lang.Thread.run(Thread.java:748)
+WARN  18:53:27,376 [StopSession] (SWTSynchronizer.java:52) could not execute runnable saros.concurrent.watchdog.ConsistencyWatchdogServer$3@39d5287c, UI thread is not available
+StackTrace:
+	at saros.synchronize.internal.SWTSynchronizer.exec(SWTSynchronizer.java:54)
+	at saros.synchronize.internal.SWTSynchronizer.asyncExec(SWTSynchronizer.java:19)
+	at saros.concurrent.watchdog.ConsistencyWatchdogServer.stop(ConsistencyWatchdogServer.java:166)
+	at sun.reflect.GeneratedMethodAccessor61.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.picocontainer.lifecycle.StartableLifecycleStrategy.doLifecycleMethod(StartableLifecycleStrategy.java:101)
+	at org.picocontainer.lifecycle.StartableLifecycleStrategy.stopComponent(StartableLifecycleStrategy.java:113)
+	at org.picocontainer.lifecycle.StartableLifecycleStrategy.stop(StartableLifecycleStrategy.java:126)
+	at org.picocontainer.injectors.AbstractInjectionFactory$LifecycleAdapter.stop(AbstractInjectionFactory.java:88)
+	at org.picocontainer.behaviors.AbstractBehavior.stop(AbstractBehavior.java:179)
+	at org.picocontainer.behaviors.Stored$RealComponentLifecycle.stop(Stored.java:141)
+	at org.picocontainer.behaviors.Stored.stop(Stored.java:118)
+	at org.picocontainer.DefaultPicoContainer.stopAdapters(DefaultPicoContainer.java:1036)
+	at org.picocontainer.DefaultPicoContainer.stop(DefaultPicoContainer.java:791)
+	at saros.session.internal.SarosSession.stop(SarosSession.java:615)
+	at saros.session.SarosSessionManager.stopSession(SarosSessionManager.java:344)
+	at saros.ui.util.CollaborationUtils$2.run(CollaborationUtils.java:152)
+	at saros.util.ThreadUtils$1.run(ThreadUtils.java:35)
+	at java.lang.Thread.run(Thread.java:748)
+WARN  18:53:27,378 [StopSession] (SWTUtils.java:176) could not execute runnable saros.editor.EditorManager$3$1@49fc80b8, UI thread is not available
+StackTrace:
+	at saros.ui.util.SWTUtils.runSafeSWTSync(SWTUtils.java:178)
+	at saros.editor.EditorManager$3.execute(EditorManager.java:239)
+	at saros.editor.EditorManager$3.unblock(EditorManager.java:230)
+	at saros.synchronize.StopManager.lockSession(StopManager.java:363)
+	at saros.synchronize.StopManager.stop(StopManager.java:531)
+	at sun.reflect.GeneratedMethodAccessor61.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.picocontainer.lifecycle.StartableLifecycleStrategy.doLifecycleMethod(StartableLifecycleStrategy.java:101)
+	at org.picocontainer.lifecycle.StartableLifecycleStrategy.stopComponent(StartableLifecycleStrategy.java:113)
+	at org.picocontainer.lifecycle.StartableLifecycleStrategy.stop(StartableLifecycleStrategy.java:126)
+	at org.picocontainer.injectors.AbstractInjectionFactory$LifecycleAdapter.stop(AbstractInjectionFactory.java:88)
+	at org.picocontainer.behaviors.AbstractBehavior.stop(AbstractBehavior.java:179)
+	at org.picocontainer.behaviors.Stored$RealComponentLifecycle.stop(Stored.java:141)
+	at org.picocontainer.behaviors.Stored.stop(Stored.java:118)
+	at org.picocontainer.DefaultPicoContainer.stopAdapters(DefaultPicoContainer.java:1036)
+	at org.picocontainer.DefaultPicoContainer.stop(DefaultPicoContainer.java:791)
+	at saros.session.internal.SarosSession.stop(SarosSession.java:615)
+	at saros.session.SarosSessionManager.stopSession(SarosSessionManager.java:344)
+	at saros.ui.util.CollaborationUtils$2.run(CollaborationUtils.java:152)
+	at saros.util.ThreadUtils$1.run(ThreadUtils.java:35)
+	at java.lang.Thread.run(Thread.java:748)
+WARN  18:53:27,382 [StopSession] (SWTUtils.java:176) could not execute runnable saros.editor.EditorManager$5$2@52f86c4b, UI thread is not available
+StackTrace:
+	at saros.ui.util.SWTUtils.runSafeSWTSync(SWTUtils.java:178)
+	at saros.editor.EditorManager$5.sessionEnded(EditorManager.java:361)
+	at saros.session.SarosSessionManager.sessionEnded(SarosSessionManager.java:806)
+	at saros.session.SarosSessionManager.stopSession(SarosSessionManager.java:358)
+	at saros.ui.util.CollaborationUtils$2.run(CollaborationUtils.java:152)
+	at saros.util.ThreadUtils$1.run(ThreadUtils.java:35)
+	at java.lang.Thread.run(Thread.java:748)
+WARN  18:53:27,383 [StopSession] (SWTUtils.java:128) could not execute runnable saros.ui.views.SarosView$12@5979d1f5, UI thread is not available
+StackTrace:
+	at saros.ui.util.SWTUtils.runSafeSWTAsync(SWTUtils.java:130)
+	at saros.ui.views.SarosView.clearNotifications(SarosView.java:639)
+	at saros.ui.eventhandler.HostLeftAloneInSessionHandler$1.sessionEnded(HostLeftAloneInSessionHandler.java:44)
+	at saros.session.SarosSessionManager.sessionEnded(SarosSessionManager.java:806)
+	at saros.session.SarosSessionManager.stopSession(SarosSessionManager.java:358)
+	at saros.ui.util.CollaborationUtils$2.run(CollaborationUtils.java:152)
+	at saros.util.ThreadUtils$1.run(ThreadUtils.java:35)
+	at java.lang.Thread.run(Thread.java:748)

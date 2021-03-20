@@ -1,0 +1,80 @@
+INFO  15:47:26,099 [StunDiscovery-192.168.1.78] (StunServiceImpl.java:144) Starting Saros 15.0.0 running:
+  Java Version: 1.8.0_231
+  Java Vendor: Oracle Corporation
+  Eclipse Runtime Version: 3.17.100.v20200203-0917
+  Operating System: Windows 10 (10.0)
+  Hardware Architecture: amd64
+INFO  15:47:26,131 [StunDiscovery-192.168.1.78] (StunServiceImpl.java:144) initializing context...
+INFO  15:47:26,905 [StunDiscovery-192.168.1.78] (StunServiceImpl.java:144) initializing preference default values
+INFO  15:47:26,974 [StunDiscovery-192.168.1.78] (StunServiceImpl.java:144) successfully initialized context
+ERROR 15:47:46,407 [StunDiscovery-192.168.1.78] (StunServiceImpl.java:144) an error occurred while performing a STUN discovery: ICMP Port Unreachable
+java.net.PortUnreachableException: ICMP Port Unreachable
+	at java.net.DualStackPlainDatagramSocketImpl.socketReceiveOrPeekData(Native Method)
+	at java.net.DualStackPlainDatagramSocketImpl.receive0(DualStackPlainDatagramSocketImpl.java:124)
+	at java.net.AbstractPlainDatagramSocketImpl.receive(AbstractPlainDatagramSocketImpl.java:143)
+	at java.net.DatagramSocket.receive(DatagramSocket.java:812)
+	at saros.net.stun.internal.StunServiceImpl$StunDiscovery.performStunDiscovery(StunServiceImpl.java:260)
+	at saros.net.stun.internal.StunServiceImpl$StunDiscovery.run(StunServiceImpl.java:139)
+	at java.lang.Thread.run(Thread.java:748)
+INFO  15:48:00,152 [Worker-3: Session Startup] (SarosSessionManager.java:285) session started
+INFO  15:48:29,613 [dpp-upnp-resolver-cfg] (UPnPServiceImpl.java:234) discovered 1 gateway(s)
+INFO  15:48:52,754 [StopSession] (SarosSessionManager.java:345) session stopped
+INFO  15:49:00,967 [Worker-16: Session Startup] (SarosSessionManager.java:285) session started
+INFO  15:50:28,661 [Worker-23: Inviting Tarikao (takaz@saros-con.imp.fu-berlin.de)...] (SarosSession.java:418) user takaz@saros-con.imp.fu-berlin.de/Saros joined session
+INFO  15:50:32,719 [Worker-2: Synchronizing projects] (SarosSession.java:424) user takaz@saros-con.imp.fu-berlin.de/Saros started queuing projects and can receive IResourceActivities
+INFO  15:50:33,786 [Worker-2: Synchronizing projects] (SarosSession.java:453) user takaz@saros-con.imp.fu-berlin.de/Saros now has Projects and can process IResourceActivities
+ERROR 15:58:50,052 [BinaryChannel-takaz] (BinaryChannelConnection.java:100) [mode=SOCKS5 (D), id=saros-main-session] takaz@saros-con.imp.fu-berlin.de/Saros network error: Read timed out
+java.net.SocketTimeoutException: Read timed out
+	at java.net.SocketInputStream.socketRead0(Native Method)
+	at java.net.SocketInputStream.socketRead(SocketInputStream.java:116)
+	at java.net.SocketInputStream.read(SocketInputStream.java:171)
+	at java.net.SocketInputStream.read(SocketInputStream.java:141)
+	at java.io.BufferedInputStream.fill(BufferedInputStream.java:246)
+	at java.io.BufferedInputStream.read(BufferedInputStream.java:265)
+	at java.io.DataInputStream.readUnsignedByte(DataInputStream.java:288)
+	at saros.net.internal.BinaryChannelConnection.readNextXMPPExtension(BinaryChannelConnection.java:287)
+	at saros.net.internal.BinaryChannelConnection.access$2(BinaryChannelConnection.java:283)
+	at saros.net.internal.BinaryChannelConnection$ReceiverThread.run(BinaryChannelConnection.java:93)
+ERROR 15:58:51,660 [dpp-activity-sender] (ActivitySequencer.java:521) failed to sent activities: [ChecksumActivity(path: SPath [project=P/Sokoban2020_TarikAziz_92495_JeanMatos_92844 (EclipseProjectImpl), projectRelativePath=src/pt/iscte/dcti/poo/sokoban/starter/Buraco.java], hash: -659720949, length: 923, jupiterTimestamp: [0,0]), ChecksumActivity(path: SPath [project=P/Sokoban2020_TarikAziz_92495_JeanMatos_92844 (EclipseProjectImpl), projectRelativePath=src/pt/iscte/dcti/poo/sokoban/starter/SokobanGame.java], hash: 1485014561, length: 6824, jupiterTimestamp: [0,0]), ChecksumActivity(path: SPath [project=P/Sokoban2020_TarikAziz_92495_JeanMatos_92844 (EclipseProjectImpl), projectRelativePath=src/pt/iscte/dcti/poo/sokoban/starter/Caixote.java], hash: 1857406128, length: 1168, jupiterTimestamp: [0,0])]
+java.io.IOException: not connected to takaz@saros-con.imp.fu-berlin.de/Saros [connection identifier=saros-main-session]
+	at saros.net.internal.DataTransferManager.sendData(DataTransferManager.java:225)
+	at saros.net.internal.XMPPTransmitter.send(XMPPTransmitter.java:84)
+	at saros.session.internal.ActivitySequencer.sendActivities(ActivitySequencer.java:519)
+	at saros.session.internal.ActivitySequencer.access$3(ActivitySequencer.java:461)
+	at saros.session.internal.ActivitySequencer$2.run(ActivitySequencer.java:147)
+	at saros.util.ThreadUtils$1.run(ThreadUtils.java:35)
+	at java.lang.Thread.run(Thread.java:748)
+INFO  16:06:27,120 [dpp-kill-user-takaz-tx] (SarosSession.java:535) user takaz@saros-con.imp.fu-berlin.de/Saros left session
+INFO  16:06:59,307 [DispatchContext] (NegotiationPacketListener.java:227) received invitation from takaz@saros-con.imp.fu-berlin.de/Saros [negotiation id: 2215800904011226472, session id: 123833378, version: 15.0.0]
+INFO  16:06:59,307 [DispatchContext] (NegotiationPacketListener.java:241) rejecting session negotiation request with id: 2215800904011226472
+INFO  16:07:05,506 [StopSession] (SarosSessionManager.java:345) session stopped
+INFO  16:07:38,745 [DispatchContext] (NegotiationPacketListener.java:227) received invitation from takaz@saros-con.imp.fu-berlin.de/Saros [negotiation id: -861113755629132931, session id: 867143356, version: 15.0.0]
+INFO  16:07:42,255 [ModalContext] (SarosSessionManager.java:301) joined uninitialized Saros session
+INFO  16:07:42,256 [ModalContext] (DataTransferManager.java:416) establishing connection to takaz@saros-con.imp.fu-berlin.de/Saros from jeanmatos@saros-con.imp.fu-berlin.de/Saros using stream service XMPP-Socks5-Stream-Service
+WARN  16:07:44,464 [Smack Listener Processor (0)] (SubscriptionHandler.java:127) received error presence package from saros_867143356@conference.saros-con.imp.fu-berlin.de/jeanmatos@saros-con.imp.fu-berlin.de/Saros, condition: not-authorized, message: A password is required to enter this room
+WARN  16:07:44,810 [pool-6-thread-2] (Socks5StreamService.java:329) [SOCKS5Transport] Received response connection without a running connect
+INFO  16:07:44,866 [DispatchContext] (NegotiationPacketListener.java:310) received project negotiation from takaz@saros-con.imp.fu-berlin.de/Saros with negotiation id: -2301060811973897393
+DEBUG 16:07:45,627 [Smack Listener Processor (0)] (MultiUserChatStateManager.java:98) Incoming Message from saros_867143356@conference.saros-con.imp.fu-berlin.de/takaz@saros-con.imp.fu-berlin.de/Saros with state: active
+DEBUG 16:07:46,037 [Smack Listener Processor (0)] (MultiUserChatStateManager.java:98) Incoming Message from saros_867143356@conference.saros-con.imp.fu-berlin.de/jeanmatos@saros-con.imp.fu-berlin.de/Saros with state: active
+INFO  16:08:15,762 [DispatchContext] (SarosSession.java:453) user takaz@saros-con.imp.fu-berlin.de/Saros now has Projects and can process IResourceActivities
+WARN  16:41:49,331 [main] (TextEditActivity.java:161) NoOp Text edit: new '' old ''
+WARN  16:41:50,756 [main] (TextEditActivity.java:161) NoOp Text edit: new '' old ''
+WARN  16:41:52,614 [main] (TextEditActivity.java:161) NoOp Text edit: new '' old ''
+WARN  16:42:10,446 [main] (TextEditActivity.java:161) NoOp Text edit: new '' old ''
+WARN  16:42:29,240 [main] (TextEditActivity.java:161) NoOp Text edit: new '' old ''
+WARN  16:42:33,415 [main] (TextEditActivity.java:161) NoOp Text edit: new '' old ''
+WARN  16:43:30,812 [main] (TextEditActivity.java:161) NoOp Text edit: new '' old ''
+WARN  16:45:27,618 [main] (TextEditActivity.java:161) NoOp Text edit: new '' old ''
+WARN  16:48:03,176 [main] (TextEditActivity.java:161) NoOp Text edit: new '' old ''
+WARN  16:51:19,259 [main] (TextEditActivity.java:161) NoOp Text edit: new '' old ''
+WARN  16:52:58,249 [main] (TextEditActivity.java:161) NoOp Text edit: new '' old ''
+WARN  16:56:20,992 [main] (TextEditActivity.java:161) NoOp Text edit: new '' old ''
+WARN  16:59:18,906 [main] (TextEditActivity.java:161) NoOp Text edit: new '' old ''
+WARN  17:17:48,761 [main] (EditorAPI.java:259) could not get resource reference from editor part: org.eclipse.jdt.internal.ui.javaeditor.ClassFileEditor@3115f183
+WARN  17:17:48,782 [main] (EditorAPI.java:259) could not get resource reference from editor part: org.eclipse.jdt.internal.ui.javaeditor.ClassFileEditor@3115f183
+WARN  17:17:48,817 [main] (EditorAPI.java:259) could not get resource reference from editor part: org.eclipse.jdt.internal.ui.javaeditor.ClassFileEditor@3115f183
+WARN  17:17:52,202 [main] (EditorAPI.java:259) could not get resource reference from editor part: org.eclipse.jdt.internal.ui.javaeditor.ClassFileEditor@3115f183
+INFO  19:00:40,047 [main] (ConsistencyWatchdogClient.java:345) Inconsistencies have been detected
+INFO  19:18:31,152 [dpp-stop-host] (SarosSessionManager.java:345) session stopped
+INFO  21:01:16,944 [dpp-shutdown] (ContainerContext.java:209) disposing context...
+INFO  21:01:16,948 [dpp-shutdown] (ContainerContext.java:213) successfully disposed context

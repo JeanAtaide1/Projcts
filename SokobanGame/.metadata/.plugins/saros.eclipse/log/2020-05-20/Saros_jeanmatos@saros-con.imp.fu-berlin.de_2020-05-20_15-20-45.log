@@ -1,0 +1,135 @@
+INFO  15:20:23,961 [StunDiscovery-192.168.1.78] (StunServiceImpl.java:384) Starting Saros 15.0.0 running:
+  Java Version: 1.8.0_231
+  Java Vendor: Oracle Corporation
+  Eclipse Runtime Version: 3.17.100.v20200203-0917
+  Operating System: Windows 10 (10.0)
+  Hardware Architecture: amd64
+INFO  15:20:23,988 [StunDiscovery-192.168.1.78] (StunServiceImpl.java:384) initializing context...
+INFO  15:20:24,722 [StunDiscovery-192.168.1.78] (StunServiceImpl.java:384) initializing preference default values
+INFO  15:20:24,789 [StunDiscovery-192.168.1.78] (StunServiceImpl.java:384) successfully initialized context
+WARN  15:20:45,000 [StunDiscovery-192.168.1.78] (StunServiceImpl.java:384) received no response from STUN server stunserver.org/67.227.226.240:3478 at local address /192.168.1.78:0
+WARN  15:42:53,200 [Worker-24: Session Startup] (ConsistencyAction.java:172) watchdog client component is not available, cannot perform inconsistency notification
+DEBUG 15:42:54,455 [Smack Listener Processor (0)] (MultiUserChatStateManager.java:98) Incoming Message from saros_1883860333@conference.saros-con.imp.fu-berlin.de/jeanmatos@saros-con.imp.fu-berlin.de/Saros with state: active
+INFO  15:42:56,563 [Worker-24: Session Startup] (SarosSessionManager.java:285) session started
+INFO  15:43:03,395 [Worker-26: Inviting Tarikao (takaz@saros-con.imp.fu-berlin.de)...] (SarosSession.java:418) user takaz@saros-con.imp.fu-berlin.de/Saros joined session
+DEBUG 15:43:04,932 [Smack Listener Processor (0)] (MultiUserChatStateManager.java:98) Incoming Message from saros_1883860333@conference.saros-con.imp.fu-berlin.de/takaz@saros-con.imp.fu-berlin.de/Saros with state: active
+INFO  15:43:07,613 [Worker-25: Synchronizing projects] (SarosSession.java:424) user takaz@saros-con.imp.fu-berlin.de/Saros started queuing projects and can receive IResourceActivities
+INFO  15:43:08,443 [Worker-25: Synchronizing projects] (SarosSession.java:453) user takaz@saros-con.imp.fu-berlin.de/Saros now has Projects and can process IResourceActivities
+INFO  15:43:33,693 [StopSession] (SarosSessionManager.java:345) session stopped
+WARN  15:43:44,926 [Worker-27: Session Startup] (ConsistencyAction.java:172) watchdog client component is not available, cannot perform inconsistency notification
+INFO  15:43:44,972 [Worker-27: Session Startup] (SarosSessionManager.java:285) session started
+DEBUG 15:43:46,778 [Smack Listener Processor (0)] (MultiUserChatStateManager.java:98) Incoming Message from saros_1097378005@conference.saros-con.imp.fu-berlin.de/jeanmatos@saros-con.imp.fu-berlin.de/Saros with state: active
+INFO  15:43:50,116 [Worker-24: Inviting Tarikao (takaz@saros-con.imp.fu-berlin.de)...] (SarosSession.java:418) user takaz@saros-con.imp.fu-berlin.de/Saros joined session
+DEBUG 15:43:51,667 [Smack Listener Processor (0)] (MultiUserChatStateManager.java:98) Incoming Message from saros_1097378005@conference.saros-con.imp.fu-berlin.de/takaz@saros-con.imp.fu-berlin.de/Saros with state: active
+INFO  15:43:53,204 [Worker-25: Synchronizing projects] (SarosSession.java:424) user takaz@saros-con.imp.fu-berlin.de/Saros started queuing projects and can receive IResourceActivities
+INFO  15:43:54,245 [Worker-25: Synchronizing projects] (SarosSession.java:453) user takaz@saros-con.imp.fu-berlin.de/Saros now has Projects and can process IResourceActivities
+WARN  15:56:46,297 [main] (TextEditActivity.java:161) NoOp Text edit: new '' old ''
+INFO  16:48:36,046 [dpp-remove-takaz@saros-con.imp.fu-berlin.de/Saros] (SarosSession.java:535) user takaz@saros-con.imp.fu-berlin.de/Saros left session
+INFO  16:48:36,057 [StopSession] (SarosSessionManager.java:345) session stopped
+WARN  16:52:00,545 [Worker-42: Session Startup] (ConsistencyAction.java:172) watchdog client component is not available, cannot perform inconsistency notification
+INFO  16:52:00,580 [Worker-42: Session Startup] (SarosSessionManager.java:285) session started
+DEBUG 16:52:02,417 [Smack Listener Processor (0)] (MultiUserChatStateManager.java:98) Incoming Message from saros_1689050463@conference.saros-con.imp.fu-berlin.de/jeanmatos@saros-con.imp.fu-berlin.de/Saros with state: active
+INFO  16:52:06,544 [Worker-39: Inviting Tarikao (takaz@saros-con.imp.fu-berlin.de)...] (SarosSession.java:418) user takaz@saros-con.imp.fu-berlin.de/Saros joined session
+DEBUG 16:52:08,165 [Smack Listener Processor (0)] (MultiUserChatStateManager.java:98) Incoming Message from saros_1689050463@conference.saros-con.imp.fu-berlin.de/takaz@saros-con.imp.fu-berlin.de/Saros with state: active
+INFO  16:52:18,432 [Worker-45: Synchronizing projects] (SarosSession.java:424) user takaz@saros-con.imp.fu-berlin.de/Saros started queuing projects and can receive IResourceActivities
+INFO  16:52:18,437 [Worker-45: Synchronizing projects] (SarosSession.java:453) user takaz@saros-con.imp.fu-berlin.de/Saros now has Projects and can process IResourceActivities
+ERROR 17:00:48,119 [BinaryChannel-takaz] (BinaryChannelConnection.java:100) [mode=SOCKS5 (D), id=saros-main-session] takaz@saros-con.imp.fu-berlin.de/Saros network error: Read timed out
+java.net.SocketTimeoutException: Read timed out
+	at java.net.SocketInputStream.socketRead0(Native Method)
+	at java.net.SocketInputStream.socketRead(SocketInputStream.java:116)
+	at java.net.SocketInputStream.read(SocketInputStream.java:171)
+	at java.net.SocketInputStream.read(SocketInputStream.java:141)
+	at java.io.BufferedInputStream.fill(BufferedInputStream.java:246)
+	at java.io.BufferedInputStream.read(BufferedInputStream.java:265)
+	at java.io.DataInputStream.readUnsignedByte(DataInputStream.java:288)
+	at saros.net.internal.BinaryChannelConnection.readNextXMPPExtension(BinaryChannelConnection.java:287)
+	at saros.net.internal.BinaryChannelConnection.access$2(BinaryChannelConnection.java:283)
+	at saros.net.internal.BinaryChannelConnection$ReceiverThread.run(BinaryChannelConnection.java:93)
+ERROR 17:00:48,803 [dpp-activity-sender] (ActivitySequencer.java:521) failed to sent activities: [TextSelectionActivity(offset: 444, length: 0, src: jeanmatos@saros-con.imp.fu-berlin.de/Saros, path: SPath [project=P/Sokoban2020_TarikAziz_92495_JeanMatos_92844 (EclipseProjectImpl), projectRelativePath=src/pt/iscte/dcti/poo/sokoban/starter/Gelo.java])]
+java.io.IOException: not connected to takaz@saros-con.imp.fu-berlin.de/Saros [connection identifier=saros-main-session]
+	at saros.net.internal.DataTransferManager.sendData(DataTransferManager.java:225)
+	at saros.net.internal.XMPPTransmitter.send(XMPPTransmitter.java:84)
+	at saros.session.internal.ActivitySequencer.sendActivities(ActivitySequencer.java:519)
+	at saros.session.internal.ActivitySequencer.access$3(ActivitySequencer.java:461)
+	at saros.session.internal.ActivitySequencer$2.run(ActivitySequencer.java:147)
+	at saros.util.ThreadUtils$1.run(ThreadUtils.java:35)
+	at java.lang.Thread.run(Thread.java:748)
+INFO  17:00:52,498 [dpp-kill-user-takaz-tx] (SarosSession.java:535) user takaz@saros-con.imp.fu-berlin.de/Saros left session
+INFO  17:20:12,097 [StopSession] (SarosSessionManager.java:345) session stopped
+WARN  17:20:20,730 [Worker-52: Session Startup] (ConsistencyAction.java:172) watchdog client component is not available, cannot perform inconsistency notification
+INFO  17:20:20,764 [Worker-52: Session Startup] (SarosSessionManager.java:285) session started
+DEBUG 17:20:22,199 [Smack Listener Processor (0)] (MultiUserChatStateManager.java:98) Incoming Message from saros_1892742742@conference.saros-con.imp.fu-berlin.de/jeanmatos@saros-con.imp.fu-berlin.de/Saros with state: active
+ERROR 17:20:30,770 [Worker-54: Inviting Tarikao (takaz@saros-con.imp.fu-berlin.de)...] (OutgoingSessionNegotiation.java:249) OSN [remote side: takaz@saros-con.imp.fu-berlin.de/Saros] : could not obtain remote Saros version
+ERROR 17:20:30,771 [Worker-54: Inviting Tarikao (takaz@saros-con.imp.fu-berlin.de)...] (Negotiation.java:438) canceled negotiation OSN [remote side: takaz@saros-con.imp.fu-berlin.de/Saros], error: Could not obtain the version of the Saros plugin from takaz@saros-con.imp.fu-berlin.de. Please try again.
+INFO  17:20:37,187 [StopSession] (SarosSessionManager.java:345) session stopped
+WARN  17:20:49,697 [Worker-52: Session Startup] (ConsistencyAction.java:172) watchdog client component is not available, cannot perform inconsistency notification
+INFO  17:20:49,730 [Worker-52: Session Startup] (SarosSessionManager.java:285) session started
+DEBUG 17:20:51,185 [Smack Listener Processor (0)] (MultiUserChatStateManager.java:98) Incoming Message from saros_1525894165@conference.saros-con.imp.fu-berlin.de/jeanmatos@saros-con.imp.fu-berlin.de/Saros with state: active
+ERROR 17:20:59,736 [Worker-51: Inviting Tarikao (takaz@saros-con.imp.fu-berlin.de)...] (OutgoingSessionNegotiation.java:249) OSN [remote side: takaz@saros-con.imp.fu-berlin.de/Saros] : could not obtain remote Saros version
+ERROR 17:20:59,736 [Worker-51: Inviting Tarikao (takaz@saros-con.imp.fu-berlin.de)...] (Negotiation.java:438) canceled negotiation OSN [remote side: takaz@saros-con.imp.fu-berlin.de/Saros], error: Could not obtain the version of the Saros plugin from takaz@saros-con.imp.fu-berlin.de. Please try again.
+WARN  17:56:34,272 [main] (TextEditActivity.java:161) NoOp Text edit: new '' old ''
+WARN  18:09:33,058 [main] (TextEditActivity.java:161) NoOp Text edit: new '' old ''
+WARN  18:09:33,182 [main] (TextEditActivity.java:161) NoOp Text edit: new '' old ''
+INFO  18:41:20,180 [StopSession] (SarosSessionManager.java:345) session stopped
+WARN  18:41:30,719 [Worker-75: Session Startup] (ConsistencyAction.java:172) watchdog client component is not available, cannot perform inconsistency notification
+INFO  18:41:30,743 [Worker-75: Session Startup] (SarosSessionManager.java:285) session started
+DEBUG 18:41:32,542 [Smack Listener Processor (0)] (MultiUserChatStateManager.java:98) Incoming Message from saros_1914793457@conference.saros-con.imp.fu-berlin.de/jeanmatos@saros-con.imp.fu-berlin.de/Saros with state: active
+INFO  18:41:36,028 [Worker-76: Inviting Tarikao (takaz@saros-con.imp.fu-berlin.de)...] (SarosSession.java:418) user takaz@saros-con.imp.fu-berlin.de/Saros joined session
+DEBUG 18:41:37,471 [Smack Listener Processor (0)] (MultiUserChatStateManager.java:98) Incoming Message from saros_1914793457@conference.saros-con.imp.fu-berlin.de/takaz@saros-con.imp.fu-berlin.de/Saros with state: active
+INFO  18:41:41,139 [Worker-80: Synchronizing projects] (SarosSession.java:424) user takaz@saros-con.imp.fu-berlin.de/Saros started queuing projects and can receive IResourceActivities
+INFO  18:41:42,191 [Worker-80: Synchronizing projects] (SarosSession.java:453) user takaz@saros-con.imp.fu-berlin.de/Saros now has Projects and can process IResourceActivities
+WARN  19:11:00,900 [main] (TextEditActivity.java:161) NoOp Text edit: new '' old ''
+INFO  20:55:40,830 [dpp-remove-takaz@saros-con.imp.fu-berlin.de/Saros] (SarosSession.java:535) user takaz@saros-con.imp.fu-berlin.de/Saros left session
+INFO  20:55:40,841 [StopSession] (SarosSessionManager.java:345) session stopped
+ERROR 18:22:36,322 [Smack Packet Reader (0)] (XMPPConnectionService.java:97) XMPP connection error: 
+java.net.SocketException: Network is unreachable: recv failed
+	at java.net.SocketInputStream.socketRead0(Native Method)
+	at java.net.SocketInputStream.socketRead(SocketInputStream.java:116)
+	at java.net.SocketInputStream.read(SocketInputStream.java:171)
+	at java.net.SocketInputStream.read(SocketInputStream.java:141)
+	at sun.security.ssl.InputRecord.readFully(InputRecord.java:465)
+	at sun.security.ssl.InputRecord.read(InputRecord.java:503)
+	at sun.security.ssl.SSLSocketImpl.readRecord(SSLSocketImpl.java:975)
+	at sun.security.ssl.SSLSocketImpl.readDataRecord(SSLSocketImpl.java:933)
+	at sun.security.ssl.AppInputStream.read(AppInputStream.java:105)
+	at sun.nio.cs.StreamDecoder.readBytes(StreamDecoder.java:284)
+	at sun.nio.cs.StreamDecoder.implRead(StreamDecoder.java:326)
+	at sun.nio.cs.StreamDecoder.read(StreamDecoder.java:178)
+	at java.io.InputStreamReader.read(InputStreamReader.java:184)
+	at java.io.BufferedReader.fill(BufferedReader.java:161)
+	at java.io.BufferedReader.read1(BufferedReader.java:212)
+	at java.io.BufferedReader.read(BufferedReader.java:286)
+	at org.xmlpull.mxp1.MXParser.fillBuf(MXParser.java:2992)
+	at org.xmlpull.mxp1.MXParser.more(MXParser.java:3046)
+	at org.xmlpull.mxp1.MXParser.nextImpl(MXParser.java:1144)
+	at org.xmlpull.mxp1.MXParser.next(MXParser.java:1093)
+	at org.jivesoftware.smack.PacketReader.parsePackets(PacketReader.java:312)
+	at org.jivesoftware.smack.PacketReader.access$000(PacketReader.java:48)
+	at org.jivesoftware.smack.PacketReader$1.run(PacketReader.java:76)
+ERROR 18:22:36,342 [Smack Packet Reader (0)] (XMPPConnectionService.java:364)  new connection state == ERROR
+java.net.SocketException: Network is unreachable: recv failed
+	at java.net.SocketInputStream.socketRead0(Native Method)
+	at java.net.SocketInputStream.socketRead(SocketInputStream.java:116)
+	at java.net.SocketInputStream.read(SocketInputStream.java:171)
+	at java.net.SocketInputStream.read(SocketInputStream.java:141)
+	at sun.security.ssl.InputRecord.readFully(InputRecord.java:465)
+	at sun.security.ssl.InputRecord.read(InputRecord.java:503)
+	at sun.security.ssl.SSLSocketImpl.readRecord(SSLSocketImpl.java:975)
+	at sun.security.ssl.SSLSocketImpl.readDataRecord(SSLSocketImpl.java:933)
+	at sun.security.ssl.AppInputStream.read(AppInputStream.java:105)
+	at sun.nio.cs.StreamDecoder.readBytes(StreamDecoder.java:284)
+	at sun.nio.cs.StreamDecoder.implRead(StreamDecoder.java:326)
+	at sun.nio.cs.StreamDecoder.read(StreamDecoder.java:178)
+	at java.io.InputStreamReader.read(InputStreamReader.java:184)
+	at java.io.BufferedReader.fill(BufferedReader.java:161)
+	at java.io.BufferedReader.read1(BufferedReader.java:212)
+	at java.io.BufferedReader.read(BufferedReader.java:286)
+	at org.xmlpull.mxp1.MXParser.fillBuf(MXParser.java:2992)
+	at org.xmlpull.mxp1.MXParser.more(MXParser.java:3046)
+	at org.xmlpull.mxp1.MXParser.nextImpl(MXParser.java:1144)
+	at org.xmlpull.mxp1.MXParser.next(MXParser.java:1093)
+	at org.jivesoftware.smack.PacketReader.parsePackets(PacketReader.java:312)
+	at org.jivesoftware.smack.PacketReader.access$000(PacketReader.java:48)
+	at org.jivesoftware.smack.PacketReader$1.run(PacketReader.java:76)
+INFO  18:24:01,284 [dpp-shutdown] (ContainerContext.java:209) disposing context...
+INFO  18:24:01,297 [dpp-shutdown] (ContainerContext.java:213) successfully disposed context
